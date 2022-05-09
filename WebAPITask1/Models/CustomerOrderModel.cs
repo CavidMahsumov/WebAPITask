@@ -1,11 +1,10 @@
-﻿namespace WebAPITask1.Entities
+﻿namespace WebAPITask1.Models
 {
-    public class Order:IEntity
+    public class CustomerOrderModel
     {
-        public int OrderId { get; set; }
         public int CustomerId { get; set; }
+        public string CustomerName { get; set; }
         public DateTime OrderDate { get; set; }
         public string OrderName { get; set; }
-
     }
 }
